@@ -1,0 +1,330 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>types</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+
+<style>
+    h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+</style>
+
+<body>
+
+    
+
+    <h1>2. Переменные и типы данных</h1>
+
+    <h2>Переменные</h2>
+    <p>Переменные предназначены для хранения данных. Название переменной в Python должно начинаться с алфавитного символа или со знака</p>
+    <p>подчеркивания и может содержать алфавитно-цифровые символы и знак подчеркивания.</p>
+    <p>Например, создадим переменную:</p>
+
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.43.14.png" alt="">
+    </div>
+    <p>Здесь определена переменная name, которая хранит строку "Tom".</p>
+    <p>Определив переменную, мы можем использовать в программе. Например, попытаться вывести ее содержимое на консоль с помощью встроенной функции print:</p>
+
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.46.09.png" alt="">
+    </div>
+    <p>Отличительной особенностью переменной является то, что мы можем менять ее значение в течение работы программы:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.49.24.png" alt="">
+    </div>
+
+    <h2>Типы данных</h2>
+    <p>Переменная хранит данные одного из типов данных. В Python существует множество различных типов данных. В данном случае</p>
+    <p>рассмотрим только самые базовые типы: <b>bool, int, float, complex</b> и <b>str.</b></p>
+
+    <h2>Логические значения</h2>
+    <p>Тип bool представляет два логических значения: <b>True</b> (верно, истина) или <b>False</b> (неверно, ложь). Значение <b>True</b> служит для того, чтобы</p>
+    <p>показать, что что-то истинно. Тогда как значение <b>False</b>, наоборот, показывает, что что-то ложно. Пример переменных данного типа:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.55.06.png" alt="">
+    </div>
+
+    <h2>Целые числа</h2>
+    <p>Тип int представляет целое число, например, 1, 4, 8, 50. Пример</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.57.38.png" alt="">
+    </div>
+
+    <p>По умолчанию стандартные числа расцениваются как числа в десятичной системе. Но Python также поддерживает числа в двоичной, восьмеричной и шестнадцатеричной системах.</p>
+    <p>Для указания, что число представляет двоичную систему, перед числом ставится префикс <b>0b:</b></p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.06.59.png" alt="">
+    </div>
+
+    <p>Для указания, что число представляет восьмеричную систему, перед числом ставится префикс <b>0o:</b></p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.09.52.png" alt="">
+    </div>
+
+    <p>Для указания, что число представляет шестнадцатеричную систему, перед числом ставится префикс <b>0x:</b></p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.13.59.png" alt="">
+    </div>
+
+    <p>Стоит отметить, что в какой-бы системе мы не передали число в функцию print для вывода на консоль, оно по умолчанию будет выводиться в десятичной системе.</p>
+
+    <h2>Дробные числа</h2>
+    <p>Тип <b>float</b> представляет число с плавающей точкой, например, 1.2 или 34.76. В качесте разделителя целой</p>
+    <p>и дробной частей используется точка.</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.16.59.png" alt="">
+    </div>
+
+    <h2>Строки</h2>
+    <p>Тип str представляет строки. Строка представляет последовательность символов, заключенную в одинарные или двойные кавычки,</p>
+    <p>например "hello" и 'hello'. В Python 3.x строки представляют набор символов в кодировке Unicode</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.19.44.png" alt="">
+    </div>
+
+    <p>При этом, если строка имеет много символов, ее можно разбить на части и эти части разместить на разных строках кода. В этом случае вся</p>
+    <p>строка заключается в круглые скобки, а ее отдельные части - в кавычки:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.23.56.png" alt="">
+    </div>
+
+    <p>Если же мы хотим определить многострочный текст, то такой текст заключается в тройные двойные или одинарные кавычки:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.25.29.png" alt="">
+    </div>
+
+    <p><b>Управляющие последовательности в строке</b></p>
+    <p>Строка может содержать ряд специальных символов - управляющих последовательностей. Некоторые из них:</p>
+    <div class="numbers">
+        <li><b>\\</b>: позволяет добавить внутрь строки слеш</li>
+        <li><b>\'</b>: позволяет добавить внутрь строки одинарную кавычку</li>
+        <li><b>\"</b>: позволяет добавить внутрь строки двойную кавычку</li>
+        <li><b>\n</b>: осуществляет переход на новую строку</li>
+        <li><b>\t</b>: добавляет табуляцию (4 отступа)</li>
+    </div>
+
+    <p><b>Вставка значений в строку</b></p>
+    <p>Python позволяет встравивать в строку значения других переменных. Для этого внутри строки переменные размещаются в фигурных</p>
+    <p>скобках <b>{}</b>, а перед всей строкой ставится символ <b>f</b>:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.46.29.png" alt="">
+    </div>
+    
+    <h2>Динамическая типизаци</h2>
+    <p>Python является языком с динамической типизацией. А это значит, что переменная не привязана жестко к определенному типу.</p>
+    <p>Тип переменной определяется исходя из значения, которое ей присвоено. Так, при присвоении строки в двойных или одинарных кавычках</p>
+    <p>переменная имеет тип <b>str</b>. При присвоении целого числа Python автоматически определяет тип переменной как <b>int</b>. Чтобы определить</p>
+    <p>переменную как объект float, ей присваивается дробное число, в котором разделителем целой и дробной части является точка.</p>
+    <p>При этом в процессе работы программы мы можем изменить тип переменной, присвоив ей значение другого типа:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.51.52.png" alt="">
+    </div>
+    <p>С помощью встроенной функции <b>type()</b> динамически можно узнать текущий тип переменной:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-04 в 21.53.15.png" alt="">
+    </div>
+
+    <div id="text" style="display:none">Hidden Text</div>
+    <title>Показать скрытый текст</title>
+    <link rel="stylesheet" href="styles.css">
+
+
+    <h2>Задачи</h2>
+
+    <p class="exercise"><b>Задача 1: Периметр прямоугольника</b></p>                  <!-- 2.1 певрая задача -->
+    <p class="ex_text">Условие: Создайте переменные length и width, присвойте им значения 8 и 5 соответственно.</p>
+    <p class="ex_text">Вычислите периметр прямоугольника и сохраните результат в переменной perimeter. Выведите периметр на экран.</p>
+    <a class="button" href="#" id="toggleText2.1">Показать ответ</a>
+    <div id="hiddenText2.1" class="hidden">
+        <p class="answer">length = 8</p>
+        <p class="answer">width = 5</p>
+        <p class="answer">perimeter = 2 * (length + width)</p>
+        <p class="answer">print(perimeter)  # Вывод: 26</p>         
+    </div>
+
+    <p class="exercise"><b>Задача 2: Среднее арифметическое</b></p>                  <!-- 2.2 вторая задача -->
+    <p class="ex_text">Условие: Создайте три переменные num1, num2 и num3, присвойте им значения 10, 20 и 30 соответственно.</p>
+    <p class="ex_text">Вычислите среднее арифметическое этих чисел и сохраните результат в переменной average. </p>
+    <p class="ex_text">Выведите среднее арифметическое на экран.</p>
+    <a class="button" href="#" id="toggleText2.2">Показать ответ</a>
+    <div id="hiddenText2.2" class="hidden">
+        <p class="answer">num1 = 10</p>
+        <p class="answer">num2 = 20</p>
+        <p class="answer">num3 = 30</p>
+        <p class="answer">print((num1 + num2 + num3)/3)  # Вывод: 20</p>         
+    </div>
+
+    <p class="exercise"><b>Задача 3: Простой калькулятор</b></p>                  <!-- 2.3 третья задача -->
+    <p class="ex_text">Условие: Создайте две переменные a и b, присвойте им значения 12 и 4 соответственно.</p>
+    <p class="ex_text">Вычислите сумму, разность, произведение и частное этих чисел, сохранив результаты в соответствующих переменных.</p>
+    <p class="ex_text">Выведите все результаты на экран.</p>
+    <a class="button" href="#" id="toggleText2.3">Показать ответ</a>
+    <div id="hiddenText2.3" class="hidden">
+        <p class="answer">a = 12</p>
+        <p class="answer">b = 14</p>
+        <p class="answer">sum_result = a + b</p>
+        <p class="answer">difference = a - b</p>         
+        <p class="answer">product = a * b</p> 
+        <p class="answer">quotient = a / b</p>
+        <p class="answer"></p>         
+        <p class="answer">print("Сумма:", sum_result)          # Вывод: Сумма: 16</p>
+        <p class="answer">print("Разность:", difference)        # Вывод: Разность: 8</p>
+        <p class="answer">print("Произведение:", product)      # Вывод: Произведение: 48</p>
+        <p class="answer">print("Частное:", quotient)           # Вывод: Частное: 3.0</p>
+    </div>
+
+    <p class="exercise"><b>Задача 4: Составление полного адреса</b></p>                  <!-- 2.4 четвертая задача -->
+    <p class="ex_text">Создайте переменные street, city и zip_code, пользователь должен поочередно внести данные о себе.</p>
+    <p class="ex_text">Объедините эти переменные в одну строку формата "Улица, Город, Почтовый индекс" и выведите на экран.</p>
+    <a class="button" href="#" id="toggleText2.4">Показать ответ</a>
+    <div id="hiddenText2.4" class="hidden">
+        <p class="answer">street = input()</p>
+        <p class="answer">city = input()</p>
+        <p class="answer">zip_code = input()</p>
+        <p class="answer">full_address = f"{street}, {city}, {zip_code}"</p>         
+        <p class="answer">print(full_address)  # (пример) Вывод: Ленина, Москва, 101000</p>          
+    </div>
+
+    <p class="exercise"><b>Задача 5: Определение возраста</b></p>                  <!-- 2.5 пятая задача -->
+    <p class="ex_text">Условие: Создайте переменные birth_year и this_year.</p>
+    <p class="ex_text">Пользователю необходимо указать их значения.</p>
+    <p class="ex_text">Вычислите текущий возраст пользователя,и сохраните результат в переменной age. Выведите возраст на экран.</p>
+    <a class="button" href="#" id="toggleText2.5">Показать ответ</a>
+    <div id="hiddenText2.5" class="hidden">
+        <p class="answer">birth_year = int(input())</p>
+        <p class="answer">this_year = int(input())</p>
+        <p class="answer">age = current_year - birth_year</p>
+        <p class="answer">print("Ваш возраст:", age)  # (пример) Вывод: Ваш возраст: 42</p>                
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/zQTHep9PfUM?si=sx9S_QeclDdQf33B" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DZvNZ9l9NT4?si=M1G6-Vo2MhPQQBJ_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+
+    <script src="scripts/script2.js"></script>
+    
+</body>
+</html>

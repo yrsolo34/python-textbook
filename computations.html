@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>computations</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <style>
+       h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>4. Вычисления</h1>
+
+    <h2>Арифметические операции с числами</h2>
+    <p>Python поддерживает все распространенные арифметические операции:</p>
+
+    <p><b>'+'&nbsp;&nbsp;&nbsp;&nbsp;Сложение двух чисел:</b> </p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 11.47.14.png" alt="">
+    </div>
+
+    <p><b>'-'&nbsp;&nbsp;&nbsp;&nbsp;Вычитание двух чисел:</b></p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 11.52.35.png" alt="">
+    </div>
+
+    <p><b>'*'&nbsp;&nbsp;&nbsp;&nbsp;Умножение двух чисел:</b></p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 11.54.47.png" alt="">
+    </div>
+
+    <p><b>'/'&nbsp;&nbsp;&nbsp;&nbsp;Деление двух чисел:</b></p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 11.56.54.png" alt="">
+    </div>
+
+    <p><b>'//'&nbsp;&nbsp;&nbsp;&nbsp;Целочисленное деление двух чисел:</b></p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 11.58.21.png" alt="">
+    </div>
+    <p>Данная операция возвращает целочисленный результат деления, отбрасывая дробную часть</p>
+
+    <p><b>'**'&nbsp;&nbsp;&nbsp;&nbsp;Возведение в степень:</b></p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 11.59.31.png" alt="">
+    </div>
+
+    <p><b>'%'&nbsp;&nbsp;&nbsp;&nbsp;Получение остатка от деления:</b></p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 12.02.12.png" alt="">
+    </div>
+    <p>В данном случае ближайшее число к 7, которое делится на 2 без остатка, это 6. Поэтому остаток от деления равен 7 - 6 = 1</p>
+
+    <p>При последовательном использовании нескольких арифметических операций их выполнение производится в соответствии с их приоритетом. В начале выполняются операции с большим приоритетом. Приоритеты операций в порядке убывания приведены в следующей таблице.</p>
+    
+    <p><b>Операции Направление</b></p>
+    <p>**&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Справо налево</p>
+    <p>* / // %&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Слева направо</p>
+    <p>+ -&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Слева направо</p>
+
+    <p>Пусть у нас выполняется следующее выражение:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 12.08.02.png" alt="">
+    </div>
+
+    <p>Здесь начале выполняется возведение в степень (5 ** 2) как операция с большим приоритетом, далее результат умножается на 4 (25 * 4), затем происходит сложение (3 + 100) и далее опять идет сложение (103 + 7).</p>
+    <p>Чтобы переопределить порядок операций, можно использовать скобки:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 12.11.08.png" alt="">
+    </div>
+    <p>Следует отметить, что в арифметических операциях могут принимать участие как целые, так и дробные числа. Если в одной операции участвует целое число (int) и число с плавающей точкой (float), то целое число приводится к типу float.</p>
+
+    <h2>Арифметические операции с присвоением</h2>
+    <p>Ряд специальных операций позволяют использовать присвоить результат операции первому операнду:</p>
+    <p><b>+=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение результата сложения</b></p>
+    <p><b>-=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение результата вычитания</b></p>
+    <p><b>*=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение результата умножения</b></p>
+    <p><b>/=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение результата от деления</b></p>
+    <p><b>//=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение результата целочисленного деления</b></p>
+    <p><b>**=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение степени числа</b></p>
+    <p><b>%=&nbsp;&nbsp;&nbsp;&nbsp;Присвоение остатка от делен</b></p>
+
+    <p>Примеры операций:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 12.18.23.png" alt="">
+    </div>
+
+    <h2>Округление и функция round</h2>
+    <p>При операциях с числами типа float надо учитывать, что результат операций с ними может быть не совсем точным. Например:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 21.32.36.png" alt="">
+    </div>
+    <p>В данном случае мы ожидаем получить число 0.40002, однако в конце через ряд нулей появляется еще какая-то четверка.</p>
+    <p>В случае выше для округления результата мы можем использовать встроенную функцию <b>round()</b>:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 21.34.54.png" alt="">
+    </div>
+    <p>В функцию <b>round()</b> передается число, которое надо округлить. Если в функцию передается одно число, как в примере выше, то оно округляется до целого.</p>
+    <p>Функция <b>round()</b> также может принимать второе число, которое указывает, сколько знаков после запятой должно содержать получаемое число:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 21.37.40.png" alt="">
+    </div>
+    <p>В данном случае число third_number округляется до 4 знаков после запятой.</p>
+    <p>Если в функцию передается только одно значение - только округляемое число, оно округляется то ближайшего целого</p>
+    <p>Примеры округлений:</p>
+    <div class="examples">
+        <img src="pictures/computations/Снимок экрана 2025-04-05 в 21.40.56.png" alt="">
+    </div>
+
+    <h2>Задачи</h2>
+
+    <p class="exercise"><b>Задача 1: «Последняя цифра числа»</b></p>                  <!-- 4.1 первая задача -->
+    <p class="ex_text">Условие: Дано натуральное число. Выведите его последнюю цифру.</p>
+    <a class="button" href="#" id="toggleText4.1">Показать ответ</a>
+    <div id="hiddenText4.1" class="hidden">
+        <p class="answer">n = int(input("Введите число: "))</p>
+        <p class="answer">print(n % 10)</p>        
+    </div>
+
+    <p class="exercise"><b>Задача 2: «МКАД»</b></p>                 <!-- 4.2 вторая задача -->
+    <p class="ex_text">Условие: Длина Московской кольцевой автомобильной дороги —109 километров. Байкер Вася стартует с нулевого километра МКАД и едет со скоростью v километров в час.</p>
+    <p class="ex_text">На какой отметке он остановится через t часов?</p>
+    <p class="ex_text">Программа получает на вход значение v и t. Если v>0, то Вася движется в положительном направлении по МКАД, если же значение v&lt;0, то в отрицательном.</p>
+    <p class="ex_text">Программа должна вывести целое число от 0 до 108 — номер отметки, на которой остановится Вася.</p>
+    <a class="button" href="#" id="toggleText4.2">Показать ответ</a>
+    <div id="hiddenText4.2" class="hidden">
+        <p class="answer">a = int(input())</p>
+        <p class="answer">b = int(input())</p>
+        <p class="answer">print((a * b) % 109)</p>
+    </div>
+
+    <p class="exercise"><b>Задача 3: «Гипотенуза»</b></p>                  <!-- 4.3 третья задача -->
+    <p class="ex_text">Условие: Дано два числа a и b. Выведите гипотенузу треугольника с заданными катетами.</p>
+    <a class="button" href="#" id="toggleText4.3">Показать ответ</a>
+    <div id="hiddenText4.3" class="hidden">
+        <p class="answer">a = int(input())</p>
+        <p class="answer">b = int(input())</p>
+        <p class="answer">c = (a**2 + b**2) ** 0.5 #получить корень - возвести число в 0.5 стпень</p>
+        <p class="answer">print(c)</p>
+    </div>
+
+    <p class="exercise"><b>Задача 4: «Сумма цифр»</b></p>                  <!-- 4.4 третья задача -->
+    <p class="ex_text">Условие: Дано трехзначное число. Найдите сумму его цифр.</p>
+    <a class="button" href="#" id="toggleText4.4">Показать ответ</a>
+    <div id="hiddenText4.4" class="hidden">
+        <p class="answer">n = int(input("Введите трехзначное число: "))</p>
+        <p class="answer">d1 = n % 10         # извлекается последняя цифра (младший разряд)</p>
+        <p class="answer">d2 = n % 100 // 10  #средняя цифра</p>
+        <p class="answer">d3 = n // 100       #первая цифра (старший разряд)</p>
+        <p class="answer">print("Сумма цифр числа:", d1 + d2 + d3)</p>
+    </div>
+
+    <p class="exercise"><b>Задача 5: «Стоимость покупки»</b></p>                  <!-- 4.5 пятая задача -->
+    <p class="ex_text">Условие: Пирожок в столовой стоит a рублей и b копеек. Определите, сколько рублей и копеек нужно заплатить за n пирожков.</p>
+    <p class="ex_text">Программа получает на вход три числа: a, b, n, и должна вывести два числа: стоимость покупки в рублях и копейках.</p>
+    <a class="button" href="#" id="toggleText4.5">Показать ответ</a>
+    <div id="hiddenText4.5" class="hidden">
+        <p class="answer">a = int(input())</p>
+        <p class="answer">b = int(input())</p>
+        <p class="answer">c = int(input())</p>
+        <p class="answer">s = (a*100 + b) * n     #сумма в копейках</p>
+        <p class="answer">print(s//100)</p>
+        <p class="answer">print(s%100)</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qxqufnPJ0I4?si=9i2BfH4hhZLDV4yC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/CQcBztktMxI?si=K8INFUYJ7d1libQB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <script src="scripts/script4.js"></script>
+</body>
+</html>

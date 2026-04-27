@@ -1,0 +1,438 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dictionaries</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .fg {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .name {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .bigtext {
+            padding: 20px 300px 20px 300px;
+            text-align: center;
+        }
+
+        .nn {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .list {
+            width: 60%;
+            
+            margin-top: 30px;
+        }
+        li {
+            padding: 20px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    <h1>9. Словари</h1>
+
+    <p>Словарь — неупорядоченная структура данных, которая позволяет хранить пары «ключ — значение».</p>
+    <p>Определение словаря имеет следующий синтаксис:</p>
+    <p><b>dictionary = { ключ1:значение1, ключ2:значение2, ....}</b></p>
+    <p>В фигурных скобках через запятую определяется последовательность элементов, где для каждого элемента сначала указывается ключ и через двоеточие его значение.</p>
+    <p>Определим словарь:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 11.45.25.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>В словаре users в качестве ключей используются числа, а в качестве значений - строки. То есть элемент с ключом 1 имеет значение "Tom", элемент с ключом 2 - значение "Bob" и т.д.</p>
+    </div>
+    <p>Другой пример:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 11.48.49.png" alt="">
+    </div>
+    <p>В словаре emails в качестве ключей используются строки - электронные адреса пользователей и в качестве значений тоже строки - имена пользователей.</p>
+    <p>Но необязательно ключи и строки должны быть однотипными. Они могу представлять разные типы:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 11.50.35.png" alt="">
+    </div>
+    <p>Мы можем также вообще определить пустой словарь без элементов:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 11.51.41.png" alt="">
+    </div>
+    <p>или так:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 11.52.40.png" alt="">
+    </div>
+    <h2>Преобразование списков в словарь</h2>
+    <div class="bigtext">
+        <p>Несмотря на то, что словарь и список - непохожие по структуре типы, но тем не менее существует возможности для отдельных видов списков преобразования их в словарь с помощью встроенной функции <b>dict()</b>. Для этого список должен хранить набор вложенных списков. Каждый вложенный список должен состоять из двух элементов - при конвертации в словарь первый элемент станет ключом, а второй - значением:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 11.56.23.png" alt="">
+    </div>
+    <h2>Получение и изменение элементов</h2>
+    <p>Для обращения к элементам словаря после его названия в квадратных скобках указывается ключ элемента:</p>
+    <p><b>dictionary[ключ]</b></p>
+    <p>Например, получим и изменим элементы в словаре:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.01.34.png" alt="">
+    </div>
+    <p>Если при установки значения элемента с таким ключом в словаре не окажется, то произойдет его добавление:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.03.34.png" alt="">
+    </div>
+    <p>Но если мы попробуем получить значение с ключом, которого нет в словаре, то Python сгенерирует ошибку KeyError:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.04.38.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>И чтобы предупредить эту ситуацию перед обращением к элементу мы можем проверять наличие ключа в словаре с помощью выражения <b>ключ in словарь</b>. Если ключ имеется в словаре, то данное выражение возвращает <b>True</b>:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.07.55.png" alt="">
+    </div>
+    <p>Также для получения элементов можно использовать метод get, который имеет две формы:</p>
+    <div class="list">
+        <li><b>get(key)</b>: возвращает из словаря элемент с ключом <b>key</b>. Если элемента с таким ключом нет, то возвращает значение <b>None</b></li>
+        <li><b>get(key, default)</b>: возвращает из словаря элемент с ключом <b>key</b>. Если элемента с таким ключом нет, то возвращает значение по умолчанию <b>default</b></li>
+    </div>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.17.28.png" alt="">
+    </div>
+    <h2>Удаление</h2>
+    <p>Для удаления элемента по ключу применяется оператор <b>del</b>:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.18.36.png" alt="">
+    </div>
+    <p>Но стоит учитывать, что если подобного ключа не окажется в словаре, то будет выброшено исключение KeyError. Поэтому опять же перед удалением желательно проверять наличие элемента с данным ключом.</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.20.35.png" alt="">
+    </div>
+    <p>Другой способ удаления представляет метод <b>pop()</b>. Он имеет две формы:</p>
+    <div class="list">
+        <li><b>pop(key)</b>: удаляет элемент по ключу key и возвращает удаленный элемент. Если элемент с данным ключом отсутствует, то генерируется исключение KeyError</li>
+        <li><b>pop(key, default)</b>: удаляет элемент по ключу key и возвращает удаленный элемент. Если элемент с данным ключом отсутствует, то возвращается значение default</li>
+    </div>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.24.16.png" alt="">
+    </div>
+    <p>Если необходимо удалить все элементы, то в этом случае можно воспользоваться методом <b>clear()</b>:</p>
+    <p><b>users.clear()</b></p>
+    <h2>Копирование и объединение словарей</h2>
+    <p>Метод <b>copy()</b> копирует содержимое словаря, возвращая новый словарь:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.26.05.png" alt="">
+    </div>
+    <p>Метод <b>update()</b> объединяет два словаря:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.27.11.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>При этом словарь users2 остается без изменений. Изменяется только словарь users, в который добавляются элементы другого словаря. Но если необходимо, чтобы оба исходных словаря были без изменений, а результатом объединения был какой-то третий словарь, то можно предварительно скопировать один словарь в другой:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 12.28.20.png" alt="">
+    </div>
+    <h2>Перебор словаря</h2>
+    <p>Для перебора словаря можно воспользоваться циклом <b>for</b>:</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 13.49.35.png" alt="">
+    </div>
+    <p>При переборе элементов мы получаем ключ текущего элемента и по нему можем получить сам элемент.</p>
+    <p>Метод <b>values()</b> возвращает специальную коллекцию значений в словаре.</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 14.27.02.png" alt="">
+    </div>
+    <p>Метод <b>items()</b> возвращает пары «ключ — значение» в формате кортежей.</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 14.28.55.png" alt="">
+    </div>
+    <h2>Примеры программ</h2>
+    <p class="name">1. Пользователь</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 14.32.20.png" alt="">
+    </div>
+    <p class="name">2. Найти слово</p>
+    <div class="examples">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-20 в 14.33.51.png" alt="">
+    </div>
+
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1:  Фрукты</b></p>                  <!-- 9.1 первая задача -->
+    <p class="ex_text">Условие: Пользователь вводит число K - количество фруктов. Затем он вводит K фруктов в формате:</p>
+    <p class="ex_text">название фрукта и его количество. Добавьте все фрукты в словарь,</p>
+    <p class=" ex_text">где название фрукта - это ключ, а количество - значение. Например:</p>
+    <div class="nn">
+        <img src="pictures/dictionaries/Снимок экрана 2025-04-21 в 19.27.38.png" alt="">
+    </div>
+    <a class="button" href="#" id="toggleText9.1">Показать ответ</a>
+    <div id="hiddenText9.1" class="hidden">
+        <p class="answer"># Запрашиваем у пользователя количество фруктов</p>
+        <p class="answer">K = int(input("Введите количество фруктов: "))</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Создаем пустой словарь для хранения фруктов</p>
+        <p class="answer">fruits_dict = {}</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Цикл для ввода фруктов</p>
+        <p class="answer">for i in range(K):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;# Запрашиваем название фрукта</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;fruit_name = input(f"Введите название фрукта {i + 1}: ")</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;# Запрашиваем количество этого фрукта</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;fruit_quantity = int(input(f"Введите количество {fruit_name}: "))</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;# Добавляем фрукт в словарь</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;fruits_dict[fruit_name] = fruit_quantity</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Выводим итоговый словарь с фруктами</p>
+        <p class="answer">print("Итоговый словарь фруктов:")</p>
+        <p class="answer">print(fruits_dict)</p>
+    </div>
+    <p class="exercise"><b>Задача 2: Старший и младший</b></p>                  <!-- 9.2 вторая задача -->
+    <p class="ex_text">Пользователь вводит число N. Затем он вводит личные данные (имя и возраст) своих N друзей.</p>
+    <p class="ex_text">Создайте список friends и добавьте в него N словарей с ключами name и age.</p>
+    <p class="ex_text">Найдите самого младшего из друзей и выведите его имя.</p>
+    <a class="button" href="#" id="toggleText9.2">Показать ответ</a>
+    <div id="hiddenText9.2" class="hidden">
+        <p class="answer">friends = []</p>
+        <p class="answer">ages = [] #создадим список, в котором будем хранить все возраста</p>
+        <p class="answer">names = []#создадим список, в котором будем хранить все имена</p>
+        <p class="answer">n = int(input())</p>
+        <p class="answer">for r in range(n): #наполняем список необходимым количеством словарей</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;friends.append({})</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">for j in range(n):    #наполняем словари</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;name = input()</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;age= int(input())</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;friends[j][name] = age</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;ages.append(age) #наполняем списки</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;names.append(name)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">friend = ages.index(min(ages)) #ищем самого младшего через списки имен и возрастов</p>
+        <p class="answer">print("Самый младший друг:", names[friend])</p>
+    </div>
+    <p class="exercise"><b>Задача 3: Еще немного о друзьях</b></p>                  <!-- 9.3 третья задача -->
+    <p class="ex_text">Условие: Пользователь вводит число N. Затем он вводит личные данные (имя и возраст) своих N друзей.</p>
+    <p class="ex_text">Создайте список friends и добавьте в него N словарей с ключами name и age.</p>
+    <p class="ex_text">Выведите средний возраст всех друзей и самое длинное имя.</p>
+    <a class="button" href="#" id="toggleText9.3">Показать ответ</a>
+    <div id="hiddenText9.3" class="hidden">
+        <p class="answer">friends = []</p>
+        <p class="answer">ages = [] #создадим список, в котором будем хранить все возраста</p>
+        <p class="answer">names = []#создадим список, в котором будем хранить все имена</p>
+        <p class="answer">n = int(input())</p>
+        <p class="answer">for r in range(n): #наполняем список необходимым количеством словарей</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;friends.append({})</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">for j in range(n):    #наполняем словари</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;name = input()</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;age= int(input())</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;friends[j][name] = age</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;ages.append(age) #наполняем списки</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;names.append(name)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">friend = ages.index(min(ages)) #ищем самого младшего через списки имен и возрастов</p>
+        <p class="answer">print("Самый младший друг:", names[friend])</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">sum_age  = 0</p>
+        <p class="answer">for f in ages:      #вычисляем средний возраст</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;sum_age += f</p>
+        <p class="answer">sred = sum_age / len(ages)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">max_lenth = 0</p>
+        <p class="answer">for d in names:     #ищем самле длинное имя</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;if len(d) > max_lenth:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;max_lenth = len(d)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ans = d</p>
+        <p class="answer">print(f"Средний возраст: {sred}")</p>
+        <p class="answer">print(f"Самое длинное имя: {ans}")</p>
+    </div>
+    <p class="exercise"><b>Задача 4: Английский словарь</b></p>                  <!-- 9.4 четвертая задача -->
+    <p class="ex_text">Программа получает на вход слово на английском языке и несколько его переводов на русском языке.</p>
+    <p class="ex_text">Составьте словарь, в котором ключ - это английское слово, а значение - это список русских слов.</p>
+    <p class="ex_text">В этой задаче нужно использовать строчный метод <b>split()</b>.</p>
+    <a class="button" href="#" id="toggleText9.4">Показать ответ</a>
+    <div id="hiddenText9.4" class="hidden">
+        <p class="answer"># Спрашиваем у пользователя английское слово</p>
+        <p class="answer">english_word = input("Введите английское слово: ")</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Спрашиваем переводы на русском языке</p>
+        <p class="answer">translations_input = input("Введите переводы на русском языке через запятую: ")</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Разделяем переводы по запятой и убираем лишние пробелы</p>
+        <p class="answer">translations_list = translations_input.split(',')</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Убираем пробелы у каждого перевода</p>
+        <p class="answer">for i in range(len(translations_list)):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;translations_list[i] = translations_list[i].strip()</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Создаем словарь</p>
+        <p class="answer">dictionary = {english_word: translations_list}</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer"># Показываем результат</p>
+        <p class="answer">print(f"Ваш словарь: {dictionary}")</p>
+    </div>
+    <p class="exercise"><b>Задача 5: Магазин</b></p>                  <!-- 9.5 пятая задача -->
+    <p class="ex_text">Создайте словарь с названиями продуктов и их ценами.</p>
+    <p class="ex_text">Напишите программу, которая позволяет пользователю вводить</p>
+    <p class="ex_text">количество каждого продукта и вычислять общую стоимость.</p>
+    <p class="ex_text">(список наполните сами)</p>
+    <a class="button" href="#" id="toggleText9.5">Показать ответ</a>
+    <div id="hiddenText9.5" class="hidden">
+        <p class="answer">products = {</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;"яблоко": 100,</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;"банан": 80,</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;"апельсин": 90</p>
+        <p class="answer">}</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">total_cost = 0</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">for product, price in products.items():</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;quantity = int(input(f"Введите количество {product}: "))</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;total_cost += price * quantity</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">print(f"Общая стоимость: {total_cost} руб.")</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AKbaDfbVhTI?si=Nx5o8-ExlhaQgTRe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-X2ubBdP2Ak?si=e6aPev6mwLK7uGA_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <script src="scripts/script9.js"></script>
+</body>
+</html>

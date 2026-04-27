@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>if</title>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>3. Условный оператор if</h1>
+
+    <p><b>Условная инструкция if-elif-else</b> (её ещё иногда называют оператором ветвления) - основной инструмент выбора в Python.</p>
+    <p>Проще говоря, она выбирает, какое действие следует выполнить, в зависимости от значения переменных в момент проверки условия.</p>
+
+    <h2>Условная конструкция if</h2>
+    <p>Условные конструкции используют условные выражения и в зависимости от их значения направляют выполнение программы по одному из путей.</p>
+    <p>Одна из таких конструкций - это конструкция if. Она имеет следующее формальное определение:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.01.46.png" alt="">
+    </div>
+    <p>В самом простом виде после ключевого слова if идет логическое выражение. И если это логическое выражение возвращает True, то выполняется последующий блок инструкций,</p>
+    <p>каждая из которых должна начинаться с новой строки и должна иметь отступы от начала выражения if (отступ желательно делать в 4 пробела или то количество пробелов, которое кратно 4):</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.03.36.png" alt="">
+    </div>
+    <p>Поскольку в данном случае значение переменной language равно "english", то будет выполняться блок if, который содержит только одну</p>
+    <p>инструкцию - print("Hello"). В итоге консоль выведет следующие строки:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.05.14.png" alt="">
+    </div>
+    <p>Обратите внимание в коде на последнюю строку, которая выводит сообщение "End". Она не имеет отступов от начала строки, поэтому она не принадлежит к блоку if и будет выполняться в любом случае, даже если выражение в конструкции if возвратит F</p>
+    <p>Но если бы мы поставили бы отступы, то она также принадлежала бы к конструкции if:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.07.37.png" alt="">
+    </div>
+
+    <h2>Блок else</h2>
+    <p>Если вдруг нам надо определить альтернативное решение на тот случай, если выражение в if возвратит False, то мы можем использовать блок else:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.09.15.png" alt="">
+    </div>
+    <p>Если выражение language == "english" возвращает True, то выполняется блок if, иначе выполняется блок else. И поскольку в данном случае условие language == "english" возвращает False, то будут выполняться инструкция из блока else.</p>
+    <p>Причем инструкции блока else также должны имет отступы от начала строки. Например, в примере выше print("End") не имеет отступа, поэтому она не входит в блок else и будет выполнятьься вне зависимости, чему равно условие language == "english".</p>
+    <p>То есть консоль нам выведет следующие строки:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.11.35.png" alt="">
+    </div>
+    <p>Блок else также может иметь несколько инструкций, которые должны иметь отступ от начала строки:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.13.25.png" alt="">
+    </div>
+
+    <h2>elif</h2>
+    <p>Если необходимо ввести несколько альтернативных условий, то можно использовать дополнительные блоки elif, после которого идет блок инструкций.</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.15.08.png" alt="">
+    </div>
+    <p>Сначала Python проверяет выражение if. Если оно равно True, то выполняются инструкции из блока if. Если это условие возвращает False, то Python проверяет выражение из elif.</p>
+    <p>Если выражение после elif равно True, то выполняются инструкции из блока elif. Но если оно равно False то выполняются инструкции из блока else</p>
+    <p>При необходимости можно определить несколько блоков elif для разных условий. Например:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.17.31.png" alt="">
+    </div>
+
+    <h2>Вложенные конструкции if</h2>
+    <p>Конструкция if в свою очередь сама может иметь вложенные конструкции if:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.19.08.png" alt="">
+    </div>
+    <p>Здесь конструкция if содержит вложенную конструкцию if/else. То есть если переменная language равна "english", тогда вложенная конструкция if/else дополнительно проверяет значение переменной daytime - равна ли она строке "morning" ли нет. И в данном случае мы получим следующий консольный вывод:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.20.58.png" alt="">
+    </div>
+    <p>Стоит учитывать, что вложенные выражения if также должны начинаться с отступов, а инструкции во вложенных конструкциях также должны иметь отступы. Отступы, расставленные не должным образом, могут изменить логику программы. Так, предыдущий пример НЕ аналогичен следующему:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.22.05.png" alt="">
+    </div>
+    <p>Подобным образом можно размещать вложенные конструкции if/elif/else в блоках elif и else:</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-05 в 01.23.02.png" alt="">
+    </div>
+
+    <p>Логические выражения содержат операторы сравнения</p>
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-17 в 23.48.22.png" alt="">
+    </div>
+
+    <h2>Проверка истинности в Python</h2>
+    <div class="list">
+        <li>Любое число, не равное 0, или непустой объект - истина.</li>
+        <li>Числа, равные 0, пустые объекты и значение None - ложь</li>
+        <li>Операции сравнения применяются к структурам данных рекурсивно</li>
+        <li>Операции сравнения возвращают True или False</li>
+        <li>Логические операторы and и or возвращают истинный или ложный объект-операнд</li>
+    </div>
+
+    <h2>Логические операторы:</h2>
+    <div class="list">
+        <li><b>X and Y</b> (Истина, если оба значения X и Y истинны.)</li>
+        <li><b>X or Y</b> (Истина, если хотя бы одно из значений X или Y истинно.)</li>
+        <li><b>not X</b> (Истина, если X ложно.)</li>
+    </div>
+
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1: Проверка четности числа</b></p>                  <!-- 3.1 первая задача -->
+    <p class="ex_text">Условие: Создайте переменную number. Пользователь должен будет вводить туда необходимое значение.</p>
+    <p class="ex_text">Проверьте, является ли это число четным или нечетным, и выведите соответствующее сообщение на экран.</p>
+    <a class="button" href="#" id="toggleText3.1">Показать ответ</a>
+    <div id="hiddenText3.1" class="hidden">
+        <p class="answer">number = int(input())</p>
+        <p class="answer">if number % 2 == 0:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Число четное")</p>
+        <p class="answer">else:</p>         
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Число нечетное")  # (пример) Вывод: Число нечетное</p>          
+    </div>
+
+    <p class="exercise"><b>Задача 2: Определение времени суток</b></p>                  <!-- 3.2 вторая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая запрашивает у пользователя время в часах (0-23) и выводит,</p>
+    <p class="ex_text">утро (0-11), день (12-17), вечер (18-21) или ночь (22-23).</p>
+    <a class="button" href="#" id="toggleText3.2">Показать ответ</a>
+    <div id="hiddenText3.2" class="hidden">
+        <p class="answer">hour = int(input("Введите время в часах (0-23): "))</p>
+        <p class="answer">if hour &lt; 12:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Утро")</p>
+        <p class="answer">elif hour &lt; 18:</p>         
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("День")</p>   
+        <p class="answer">elif hour &lt; 22:</p> 
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Вечер")</p> 
+        <p class="answer">else:</p> 
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Ночь")</p> 
+    </div>
+
+    <p class="exercise"><b>Задача 3: Сравнение двух чисел</b></p>                  <!-- 3.3 третья задача -->
+    <p class="ex_text">Условие: Напишите программу, которая запрашивает два числа у пользователя и выводит большее из них.</p>
+    <p class="ex_text">Если числа равны, выведите сообщение об этом.</p>
+    <a class="button" href="#" id="toggleText3.3">Показать ответ</a>
+    <div id="hiddenText3.3" class="hidden">
+        <p class="answer">num1 = int(input("Введите первое число: "))</p>
+        <p class="answer">num2 = int(input("Введите второе число: "))</p>
+        <p class="answer">if num1 > num2:</p>        
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print(f"Большее число: {num1}")</p>   
+        <p class="answer">elif num2 > num1:</p> 
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print(f"Большее число: {num2}")</p> 
+        <p class="answer">else:</p> 
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Числа равны.")</p> 
+    </div>
+
+    <p class="exercise"><b>Задача 4: Проверка возраста</b></p>                  <!-- 3.4 четвертая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая запрашивает у пользователя возраст и выводит сообщение о том, является ли пользователь ребенком</p>
+    <p class="ex_text">(0-12 лет), подростком (13-17 лет) или взрослым (18 лет и старше).</p>
+    <a class="button" href="#" id="toggleText3.4">Показать ответ</a>
+    <div id="hiddenText3.4" class="hidden">
+        <p class="answer">age = int(input("Введите ваш возраст: "))</p>
+        <p class="answer">if age &lt; 13:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Вы ребенок.")</p>
+        <p class="answer">elif age &lt; 18:</p>         
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Вы подросток.")</p>
+        <p class="answer">else:</p>          
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Вы взрослый.")</p>
+    </div>
+
+    <p class="exercise"><b>Задача 5: Оценка по баллам</b></p>                  <!-- 3.5 пятая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая запрашивает у пользователя количество баллов</p>
+    <p class="ex_text">(от 0 до 100) и выводит оценку: "F" (0-59), "C" (60-74), "B" (75-89), "A" (90-100).</p>
+    <a class="button" href="#" id="toggleText3.5">Показать ответ</a>
+    <div id="hiddenText3.5" class="hidden">
+        <p class="answer">score = int(input("Введите количество баллов: "))</p>
+        <p class="answer">if score &lt; 60:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Оценка: F")</p>
+        <p class="answer">elif score &lt; 75:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Оценка: C")</p>
+        <p class="answer">elif score &lt; 90:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Оценка: B")</p>
+        <p class="answer">else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Оценка: A")</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/bmS1QmE6wYM?si=ZvT7ksf_z68Lz4nE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/EggJRTzid1M?si=23I728BSHWxUEK_P" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+    <script src="scripts/script3.js"></script>
+</body>
+</html>

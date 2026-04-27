@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=s, initial-scale=1.0">
+    <title>firstprogramm</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Textbook</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>1. Первая программа. Среда разработки IDLE</h1>
+
+    <div class="text">
+        <p>Сегодня мы напишем свою первую программу в среде разработки IDLE.</p>
+    </div>
+    
+
+    <p>После <a href="downloading.html">загрузки и установки python</a> открываем IDLE (среда разработки на языке Python, поставляемая вместе с дистрибутивом).</p>
+
+    <p>Здесь и далее буду приводить примеры под ОС Windows, так как именно она наиболее популярна.</p>
+    
+    <div class="picture">
+        <img src="https://pythonworld.ru/uploads/python-first-programm/start-idle.png" alt="trrt">
+    </div>
+
+    <div class="tetx">
+        <p>Запускаем IDLE (изначально запускается в интерактивном режиме), после чего уже можно начинать писать первую программу.</p>
+        <p>Традиционно, первой программой у нас будет "hello world".</p>
+        <p>Чтобы написать "hello world" на python, достаточно всего одной строки:</p>
+    </div>
+
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 19.57.33.png" alt="">
+    </div>
+
+    <p>Вводим этот код в IDLE и нажимаем Enter. Результат виден на картинке:</p>
+    
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 19.48.40.png" alt="">
+    </div>
+
+    <p>Поздравляю! Вы написали свою <b>первую программу на python!</b></p>
+    <p>С интерактивным режимом мы немного познакомились, можете с ним ещё поиграться, например, написать</p>
+
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.00.37.png" alt="">
+    </div>
+
+    <p>Но, всё-таки, интерактивный режим не будет являться основным. В основном, вы будете сохранять программный код в файл и запускать уже файл.</p>
+    <p>Для того, чтобы создать новое окно, в интерактивном режиме IDLE выберите File → New File (или нажмите Ctrl + N).</p>
+
+    <div class="picture">
+        <img src="https://pythonworld.ru/uploads/python-first-programm/idle-new-window.png" alt="">
+    </div>
+    <p>В открывшемся окне введите следующий код:</p>
+
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.09.27.png" alt="">
+    </div>
+    <p>Первая строка печатает вопрос ("Как Вас зовут? "), ожидает, пока вы не напечатаете что-нибудь и не нажмёте Enter и сохраняет введённое значение в переменной name.</p>
+    <p>Во второй строке мы используем функцию print для вывода текста на экран, в данном случае для вывода "Привет, " и того, что хранится в переменной "name".</p>
+    <p>Теперь нажмём F5 (или выберем в меню IDLE Run → Run Module) и убедимся, что то, что мы написали, работает.</p>
+    <p>Перед запуском IDLE предложит нам сохранить файл. Сохраним туда, куда вам будет удобно, после чего программа запустится.</p>
+    <p>Вы должны увидеть что-то наподобие этого (на скриншоте слева - файл с написанной вами программой, справа - результат её работы):</p>
+
+    <div class="examples">
+        <img src="pictures/Снимок экрана 2025-04-03 в 20.14.09.png" alt="">
+    </div>
+
+    <p>Поздравляю! Вы научились писать простейшие программы, а также познакомились со средой разработки IDLE.</p>
+    <p>Теперь можно немного отдохнуть, а потом начать изучать python дальше. Можете посмотреть <a href="matrix.html">двумерные массивы,</a> <a href="for.html">циклы</a> или <a href="if.html">условия</a>. Желаю удачи!</p>
+
+
+</body>
+</html>

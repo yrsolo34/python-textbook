@@ -1,0 +1,459 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>strings</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+    h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .fg {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+</style>
+
+<body>
+    <h1>5. Строки</h1>
+    <p>Строковый тип данных — это последовательности символов Unicode любой длины, заключённые в одинарные, двойные или тройные кавычки. Символами могут быть буквы, числа, знаки препинания, специальные символы и так далее. Главное — чтобы их с двух сторон окружали кавычки. В Python текстовый тип данных обозначается буквами <b>str</b> (от англ. string — строка).</p>
+    <p>Например, создадим три переменных, используя разное число кавычек:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-05 в 23.41.18.png" alt="">
+    </div>
+    <p>Проверим, действительно ли мы создали переменные нужного типа. Для этого воспользуемся функцией <b>type</b>:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-05 в 23.43.24.png" alt="">
+    </div>
+    <p>Запустим код и посмотрим на результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-05 в 23.45.33.png" alt="">
+    </div>
+    <p>Да. Все три переменные имеют тип <b>str</b>, то есть являются строковыми.</p>
+    <p>Разберём подробнее, какие операции можно производить над строками, и поговорим про функции и методы этого типа данных.</p>
+    <h2>Работа со строками в Python: базовые операции</h2>
+    <p>Перед тем как перейти к конкретным действиям, напомним что строки в Python — неизменяемый тип данных. Это означает, что строковую переменную нельзя изменить с помощью операторов, функций и методов. Если мы хотим сохранить результат изменения существующей строки, то надо создать новую переменную.</p>
+    <h2>Сложение</h2>
+    <p>Строки, как и числа, можно складывать, проще говоря, склеивать между собой с помощью оператора <b>+</b>. Эту операцию иногда называют «сцеплением».</p>
+    <p>Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.07.04.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.08.25.png" alt="">
+    </div>
+    <p>Здесь, в отличие от сложения чисел, перестановка мест слагаемых меняет результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-05 в 23.52.39.png" alt="">
+    </div>
+    <p>Результат</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.10.01.png" alt="">
+    </div>
+    <p>Это важно помнить, не путая сложение строк со сложением чисел. В математическом плане это разные действия.</p>
+    <h2>Вычитание</h2>
+    <p>Настоящей операции вычитания строк, по аналогии с числами, в Python не существует — мы не сможем отнять символы из строки с помощью операции <b>−</b>. Но можно использовать метод <b>replace()</b>.</p>
+    <p>Он создаёт новую строку путём замены частей исходной строки. Лучше всего показать это на примере. Попробуем удалить часть слова, заменив её пустой строкой:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.13.35.png" alt="">
+    </div>
+    <p>В результате получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.14.45.png" alt="">
+    </div>
+    <h2>Дублирование (умножение)</h2>
+    <p>В языке Python строки можно умножать на целые числа. Операция работает просто — повторяет содержимое переменной указанное количество раз. Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.03.21.png" alt="">
+    </div>
+    <p>В результате получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.04.34.png" alt="">
+    </div>
+    <p>Операцию умножения удобно использовать, если строку нужно продублировать много раз без ручного ввода. Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.05.58.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.06.48.png" alt="">
+    </div>
+    <h2>Принадлежность строки</h2>
+    <p>Иногда разработчикам приходится проверять, есть ли в составе строки определённый фрагмент, который называют подстрокой. Например, мы хотим подтвердить наличие пользователя с определённым именем в нашей базе данных, где имя хранится вместе с фамилией — <b>Иван Иванов</b>. Строка здесь — это <b>Иван Иванов</b>, а нужная нам подстрока — <b>Иван</b>. Как это проверить? Воспользуемся проверкой принадлежности строки.</p>
+    <p>Для этого воспользуемся оператором <b>in</b>. Он возвращает <b>True</b>, если одна подстрока входит в состав строки, в противном случае возвращает <b>False</b>.</p>
+    <p>Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.55.35.png" alt="">
+    </div>
+    <p>С помощью оператора <b>in</b> можно упростить поиск строк в разных переменных. Например, нам необходимо проверить наличие символа в четырёх строковых переменных. Мы можем написать такой код:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.58.10.png" alt="">
+    </div>
+    <p>Выглядит сложно. Упростим его, объединив содержимое переменных в одну строку:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 00.59.55.png" alt="">
+    </div>
+    <p>Не забывайте, что регистр символов имеет значение. Например, буквы «A» и «a» компьютер воспринимает как разные.</p>
+    <h2>Определение длины строки</h2>
+    <p>Это количество содержащихся в строке символов, включая пробелы. Чтобы определить длину строки, используется функция len() (от англ. length — длина).</p>
+    <p>Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.17.45.png" alt="">
+    </div>
+    <p>Результат выполнения:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-06 в 01.18.17.png" alt="">
+    </div>
+    <h2>Доступ по индексу</h2>
+    <p>Чтобы выделить один символ строки, используют индексацию. Нумерация символов начинается с нуля и заканчивается длиной строки −1.</p>
+    <p>Например, посмотрим на индексацию строковой переменной, значение которой равно <b>'Python'</b>:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-11 в 23.57.20.png" alt="dff">
+    </div>
+    <p>Мы видим, что нумерация начинается с нуля, а заканчивается числом 5s, то есть равна количеству символов в строке с вычетом единицы.</p>
+    <p>Чтобы распечатать символы по их индексу, его необходимо указать в квадратных скобках. Вот так:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 00.00.06.png" alt="">
+    </div>
+    <p>В результате выполнения кода получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 00.03.12.png" alt="">
+    </div>
+    <p>Если мы попытаемся использовать индекс больший, чем количество символов в строке, то получим ошибку. Проверим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 21.58.39.png" alt="">
+    </div>
+    <p>Результат выполнения:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 22.50.54.png" alt="">
+    </div>
+    <p>Индексацию также можно начинать с конца строки. В таком случае последний символ будет иметь индекс, равный −1, а индекс первого символа будет равен длине строки со знаком −. Посмотрим на такую индексацию на нашем примере:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.03.16.png" alt="">
+    </div>
+    <p>Если мы используем индекс меньше отрицательного значения длины строки, программа также выдаст ошибку IndexError, например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.05.09.png" alt="">
+    </div>
+    <p>В результате получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.06.50.png" alt="">
+    </div>
+    <h2>Срез строки</h2>
+    <p>Если нам нужно получить не один символ, а часть строки, используются срезы. Срез с двумя параметрами выглядит так:</p>
+    <p><b>st[начальный индекс:конечный индекс]</b></p>
+    <p>Срез извлекает подстроку, начиная c начального индекса (включительно) и заканчивая последним индексом (не включая его), то есть символ с конечным индексом в срез не входит. Не забывайте, что индексация строки начинается с 0.</p>
+    <p>Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.14.29.png" alt="">
+    </div>
+    <p>Результат выполнения кода:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.14.53.png" alt="">
+    </div>
+    <p>Если не указывать начальный индекс, то срез берётся с начала строки. Если не указывать конечный — то до конца строки. Если опустить оба параметра, то срез возвращает всю строку. Попробуем несколько вариантов:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.22.26.png" alt="">
+    </div>
+    <p>Получаем срезы:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-12 в 23.25.48.png" alt="">
+    </div>
+    <p>Если мы зададим конечный индекс среза больше, чем количество символов в строке, то ошибки не будет. В этом случае программа возвращает срез до конца строки.</p>
+    <p>Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.01.41.png" alt="">
+    </div>
+    <p>Получим срез:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.04.23.png" alt="">
+    </div>
+    <h2>Шаг извлечения среза</h2>
+    <p>В срез можно добавить третий параметр, который будет означать шаг извлечения символов.</p>
+    <p>Например, если мы возьмём срез <b>st[0:6:2]</b> строки <b>st = 'Python'</b>, то получим строку <b>'Pto'</b>:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.08.33.png" alt="">
+    </div>
+    <p>Рассмотрим пример с отрицательными индексами. Например, срез <b>st[-6:-1:2]</b> строки st = <b>'Python'</b> тоже будет равен <b>'Pto'</b>:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.08.37.png" alt="">
+    </div>
+    <p>Шаг среза может быть отрицательным. В этом случае начальный индекс должен быть больше конечного. Символы будут включаться в срез в обратном порядке.</p>
+    <p>Например, срез <b>st[-3:-7:-2]</b> возвращает строку <b>'hy'</b>. Как видим, правая граница здесь не включается в срез.</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.08.42.png" alt="">
+    </div>
+    <p>Отрицательный шаг можно использовать с положительными индексами</p>
+    <p>Чтобы вывести символы строки в обратном порядке, удобно использовать срез [::−1], например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.22.27.png" alt="">
+    </div>
+    <p>В результате выполнения получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.26.19.png" alt="">
+    </div>
+    <p>Работа со срезами может казаться сложной — надо правильно задавать интервал, шаг или даже использовать отрицательные индексы. Попробуйте попрактиковаться на разных примерах, меняя параметры среза. Через пару десятков слов точно получится разобраться.</p>
+
+    <h2>Методы и функции строк</h2>
+    <p>Для строк существует несколько десятков полезных методов и функций, позволяющих преобразовывать текстовые переменные. Подробнее с ними можно ознакомиться в <a href="https://docs.python.org/3/library/stdtypes.html">официальной документации</a>. Собрали в таблицу наиболее популярные из них:</p>
+    <h2>Методы поиска подстроки</h2>
+    <p>К ним относятся два метода: <b>S.find(str, [start]</b>, [end]) и <b>S.rfind(str, [start], [end])</b>.</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.34.19.png" alt="">
+    </div>
+    <p>Результат выполнения кода:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.37.21.png" alt="">
+    </div>
+    <p>Если подстроки в строке нет, Python возвращает −1:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.40.49.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.42.21.png" alt="">
+    </div>
+    <h2>Методы преобразования символов строки</h2>
+    <p>Для преобразования используются два метода:</p>
+    <dl class="topics">
+        <dd class="fg"><b>S.upper()</b> — преобразование всех символов строки S в верхний регистр.</dd>
+        <dd class="fg"><b>S.lower()</b> — преобразование всех символов строки S в нижний регистр.</dd>
+    </dl>
+    <p>И тот и другой метод возвращают новую строку, а исходная остаётся прежней.</p>
+    <p>Например:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.48.45.png" alt="">
+    </div>
+    <p>В результате получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.49.55.png" alt="">
+    </div>
+    <p>Если мы хотим сохранить результат, то результат выполнения метода надо присвоить новой переменной.</p>
+    <h2>Подсчет элементов</h2>
+    <p>Метод <b>S.count(t)</b></p>
+    <p>Возвращает количество непересекающихся вхождений подстроки t в строку S. То есть метод начинает искать следующую подстроку строго после окончания предыдущей.</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.55.50.png" alt="">
+    </div>
+    <p>Метод <b>count</b> считает количество элементов <b>t</b> в строке <b>S</b> </p>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 00.55.56.png" alt="">
+    </div>
+    <h2>Метод разбиения строки по разделителю</h2>
+    <p>Для разбиения строки по разделителю используется метод <b>S.split([разделитель [, maxsplit]])</b>. Посмотрим на него в коде:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 01.07.58.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 01.09.07.png" alt="">
+    </div>
+    <p>Методы <b>rjust()</b> и <b>ljust()</b>:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 01.11.31.png" alt="">
+    </div>
+    <p>В результате выполнения получим:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 01.13.19.png" alt="">
+    </div>
+    <p>Мы рассмотрели понятия строки и текстового типа данных в Python. Подробно со всеми методами и функциями строк можно ознакомиться в <a href="https://docs.python.org/3/library/stdtypes.html"> документации.</a></p>
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1: Обратная строка</b></p>                  <!-- 5.1 первая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая принимает строку и выводит её в обратном порядке.</p>
+    <p class="ex_text">Пример ввода: "Привет"</p>
+    <p class="ex_text">Пример вывода: "тевирП"</p>
+    <a class="button" href="#" id="toggleText5.1">Показать ответ</a>
+    <div id="hiddenText5.1" class="hidden">
+        <p class="answer">s = input("Введите строку: ")</p>
+        <p class="answer">print(s[::-1])</p>
+    </div>
+    <p class="exercise"><b>Задача 2: Замена символов</b></p>                 <!-- 5.2 вторая задача -->
+    <p class="ex_text">Пример ввода: "Привет мир"</p>
+    <p class="ex_text">Пример вывода: "Привет_мир"</p>
+    <a class="button" href="#" id="toggleText5.2">Показать ответ</a>
+    <div id="hiddenText5.2" class="hidden">
+        <p class="answer">s = input("Введите строку: ")</p>
+        <p class="answer">print(s.replace(" ", "_"))</p>
+    </div>
+    <p class="exercise"><b>Задача 3: Подсчет слов</b></p>                  <!-- 5.3 третья задача -->
+    <p class="ex_text">Условие: Напишите программу, которая подсчитывает количество слов в строке.</p>
+    <p class="ex_text">Пример ввода: "Я люблю программирование"</p>
+    <p class="ex_text">Пример вывода: 3</p>
+    <a class="button" href="#" id="toggleText5.3">Показать ответ</a>
+    <div id="hiddenText5.3" class="hidden">
+        <p class="answer">s = input("Введите строку: ")</p>
+        <p class="answer">word_count = len(s.split())</p>
+        <p class="answer">print(word_count)</p>
+    </div>
+    <p class="exercise"><b>Задача 4: Повтор строки</b></p>                  <!-- 5.4 третья задача -->
+    <p class="ex_text">Условие: Напишите программу, которая повторяет строку заданное количество раз.</p>
+    <p class="ex_text">Пример ввода: "Привет" (количество: 3)</p>
+    <p class="ex_text">Пример вывода: "ПриветПриветПривет"</p>
+    <a class="button" href="#" id="toggleText5.4">Показать ответ</a>
+    <div id="hiddenText5.4" class="hidden">
+        <p class="answer">s = input("Введите строку: ")</p>
+        <p class="answer">n = int(input("Введите количество повторений: "))</p>
+        <p class="answer">print(s * n)</p>
+    </div>
+    <p class="exercise"><b>Задача 5: Удаление всех вхождений символа</b></p>                  <!-- 5.5 пятая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая удаляет все вхождения заданного символа из строки.</p>
+    <p class="ex_text">Пример ввода: "программирование" (символ: "р")  </p>
+    <p class="ex_text">Пример вывода: "огаминирование"</p>
+    <a class="button" href="#" id="toggleText5.5">Показать ответ</a>
+    <div id="hiddenText5.5" class="hidden">
+        <p class="answer">s = input("Введите строку: ")</p>
+        <p class="answer">char_to_remove = input("Введите символ для удаления: ")</p>
+        <p class="answer">print(s.replace(char_to_remove, ""))</p>
+    </div>
+    <p class="exercise"><b>Задача 6: Проверка наличия подстроки</b></p>                  <!-- 5.6 шестая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая проверяет, содержится ли подстрока в строке.</p>
+    <p class="ex_text">Пример ввода: "программирование" (подстрока: "грам")</p>
+    <p class="ex_text">Пример вывода: "Да"</p>
+    <a class="button" href="#" id="toggleText5.6">Показать ответ</a>
+    <div id="hiddenText5.6" class="hidden">
+        <p class="answer">s = input("Введите строку: ")</p>
+        <p class="answer">substring = input("Введите подстроку для поиска: ")</p>
+        <p class="answer">if substring in s:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Да")</p>
+        <p class="answer">else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Нет")</p>
+    </div>
+
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FEZ20iMtTCk?si=mpS87F0ZbaiSLfGs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BRAUoKzObGw?si=Jk-bUbkl88bDKFlR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ITI2kJ6j8Ho?si=JPCX2kn7wPJkRVtu" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <script src="scripts/script5.js"></script>
+</body>
+</html>

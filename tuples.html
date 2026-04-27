@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tuples</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .fg {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .name {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .bigtext {
+            padding: 20px 300px 20px 300px;
+            text-align: center;
+        }
+
+        .nn {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .list {
+            width: 60%;
+            
+            margin-top: 30px;
+        }
+        li {
+            padding: 20px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>10. Кортежи</h1>
+
+    <p>Кортеж <b>(tuple)</b> представляет последовательность элементов, которая во многом похожа на список за тем исключением, что кортеж является неизменяемым (immutable) типом. Поэтому мы не можем добавлять или удалять элементы в кортеже, изменять его.</p>
+    <p>Для создания кортежа используются круглые скобки, в которые помещаются его значения, разделенные запятыми:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.29.00.png" alt="">
+    </div>
+    <p>Также для определения кортежа мы можем просто перечислить значения через запятую без применения скобок:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.30.48.png" alt="">
+    </div>
+    <p>Если вдруг кортеж состоит из одного элемента, то после единственного элемента кортежа необходимо поставить запятую:</p>
+    <p class="name"><b>tom = ("Tom",)</b></p>
+    <p>Для создания кортежа из другого набора элементов, например, из списка, можно передать список в функцию <b>tuple()</b>, которая возвратит кортеж:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.32.55.png" alt="">
+    </div>
+    <p>С помощью встроенной функции <b>len()</b> можно получить длину кортежа:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.34.23.png" alt="">
+    </div>
+
+    <h2>Обращение к элементам кортежа</h2>
+    <div class="bigtext">
+        <p>Обращение к элементам в кортеже происходит также, как и в списке, по индексу. Индексация начинается также с нуля при получении элементов с начала списка и с -1 при получении элементов с конца списка:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.52.18.png" alt="">
+    </div>
+    <p>Но так как кортеж - неизменяемый тип (immutable), то мы не сможем изменить его элементы. То есть следующая запись работать не будет:</p>
+    <p class="name"><b>tom[1] = "Tim"</b></p>
+    <p>При необходимости мы можем разложить кортеж на отдельные переменные:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.58.11.png" alt="">
+    </div>
+
+    <h2>Получение подкортежей</h2>
+    <p>Как и в списках, можно получить часть кортежа в виде другого кортежа</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 21.59.46.png" alt="">
+    </div>
+
+    <h2>Перебор кортежей</h2>
+    <p>Для перебора кортежа можно использовать стандартные циклы <b>for</b> и <b>while</b>. С помощью цикла for:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 22.01.37.png" alt="">
+    </div>
+    <p>С помощью цикла <b>while</b>:</p>
+    <div class="examples">
+        <img src="pictures/tuples/Снимок экрана 2025-04-21 в 22.02.38.png" alt="">
+    </div>
+
+    <h2>Проверка наличия значения</h2>
+    <p>Как для списка с помощью выражения элемент <b>in кортеж</b> можно проверить наличие элемента в кортеже:</p>
+    <div class="examples">
+        <img src="pictures/strings/Снимок экрана 2025-04-13 в 01.13.19.png" alt="">
+    </div>
+
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1: Фкукты</b></p>                  <!-- 10.1 первая задача -->
+    <p class="ex_text">Условие: Создайте кортеж, содержащий названия трех любимых фруктов.</p>
+    <p class="ex_text">Выведите каждый фрукт на отдельной строке.</p>
+    <a class="button" href="#" id="toggleText10.1">Показать ответ</a>
+    <div id="hiddenText10.1" class="hidden">
+        <p class="answer">fruits = ("яблоко", "банан", "апельсин",)</p>
+        <p class="answer">for fruit in fruits:</p>
+        <p class="answer">vowels = "aeiouAEIOU"</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print(fruit)</p>                
+    </div>
+
+    <p class="exercise"><b>Задача 2: Студенты</b></p>                  <!-- 10.2 вторая задача -->
+    <p class="ex_text">Условие: Создайте кортеж с именами студентов в классе.</p>
+    <p class="ex_text">Выведите количество студентов в классе.</p>
+    <a class="button" href="#" id="toggleText10.2">Показать ответ</a>
+    <div id="hiddenText10.2" class="hidden">
+        <p class="answer">students = ("Аня", "Саша", "Маша", "Петя",)</p>
+        <p class="answer">print(f"Количество студентов в классе: {len(students)}")</p>
+    </div>
+
+    <p class="exercise"><b>Задача 3: Страны</b></p>                  <!-- 10.3 третья задача -->
+    <p class="ex_text">Условие: Напишите программу, которая создает кортеж с тремя странами и их населением.</p>
+    <p class="ex_text">Выведите информацию о каждой стране.</p>
+    <a class="button" href="#" id="toggleText10.3">Показать ответ</a>
+    <div id="hiddenText10.3" class="hidden">
+        <p class="answer">countries = (("Россия", 146599183), ("США", 331002651), ("Китай", 1439323776),)</p>
+        <p class="answer">for country, population in countries:</p>   
+        <p class="answer">print(f"{country}: население {population}")</p>   
+    </div>
+
+    <p class="exercise"><b>Задача 4: Зоопарк</b></p>                  <!-- 10.4 четвертая задача -->
+    <p class="ex_text">Напишите программу, которая создает кортеж с именами животных.</p>
+    <p class="ex_text">Выведите первое и последнее имя из кортежа.</p>
+    <a class="button" href="#" id="toggleText10.4">Показать ответ</a>
+    <div id="hiddenText10.4" class="hidden">
+        <p class="answer">animals = ("кот", "собака", "попугай", "кролик")</p>
+        <p class="answer">print(f"Первое животное: {animals[0]}")</p>
+        <p class="answer">print(f"Последнее животное: {animals[-1]}")</p>   
+    </div>
+
+    <p class="exercise"><b>Задача 5: Кинотеатр</b></p>                  <!-- 10.5 пятая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая создает кортеж с названиями фильмов.</p>
+    <p class="ex_text">Позвольте пользователю вводить номер фильма и выводите его название.</p>
+    <a class="button" href="#" id="toggleText10.5">Показать ответ</a>
+    <div id="hiddenText10.5" class="hidden">
+        <p class="answer">movies = ("Фильм1", "Фильм2", "Фильм3", "Фильм4",)</p>
+        <p class="answer">index = int(input("Введите номер фильма (1-4): ")) - 1</p>
+        <p class="answer">if 0 <= index < len(movies):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print(f"Выбранный фильм: {movies[index]}")</p>
+        <p class="answer">else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print("Неверный номер фильма.")</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VvhHbuCgLP4?si=QPRbfXc6h3hEHNpa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/cQfu-hYo2o4?si=GwNhHvarDuz5comd" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/pf3V5rr30Ts?si=uAsIHuyL5xZx7NUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+
+
+    <script src="scripts/script10.js"></script>
+</body>
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>while</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .fg {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .name {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>6. Цикл while</h1>
+
+    <p>Цикл while ("пока") позволяет выполнить одну и ту же последовательность действий, пока проверяемое условие истинно. Условие записывается после ключевого слова <b>while</b> и проверяется до выполнения тела цикла.</p>
+    <p>Цикл while используется, когда невозможно определить точное количество повторений цикла.</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-17 в 23.40.20.png" alt="">
+    </div>
+
+    <p>Пример простого цикла, который выводит от 0 до 4</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-17 в 23.43.16.png" alt="спрол">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-17 в 23.55.31.png" alt="">
+    </div>
+
+    <p>Цикл while может быть бесконечным.</p>
+    <p>Для этого после <b>if</b> следует писать <b>True</b></p>
+    <p>Попробуйте ввести код ниже и посмотрите на результат</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-17 в 23.59.00.png" alt="">
+    </div>
+    <p>Это только часть кода, он получился бесконечным</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 00.01.00.png" alt="">
+    </div>
+
+    <p>Выполнение цикла можно прерывать с помощью оператора <b>break</b>.</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 00.05.03.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 00.09.56.png" alt="">
+    </div>
+
+    <p>Оператор continue начинает повторение цикла заново.</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 00.19.05.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 00.22.53.png" alt="">
+    </div>
+
+    <p>Для цикла while мы можем записать конструкцию <b>else</b>.</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 21.26.12.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-18 в 21.28.19.png" alt="">
+    </div>
+
+
+    <h2>Примеры использования while</h2>
+
+    <p class="name">1. Числа от A до B</p>
+    <div class="examples">
+        <p><b># Пользователь вводит числа A и B (A > B).</b></p>
+        <p><b>Выведите все числа от A до B включительно.</b></p>
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.15.52.png" alt="">
+    </div>
+    <p>Ввод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.20.02.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.20.01.png" alt="">
+    </div>
+    
+    <p class="name">2. Много чисел</p>
+    <p><b># Пользователь вводит числа до тех пор, пока не введет 0.</b></p>
+    <p><b># Выведите количество введенных чисел (0 считать не нужно).</b></p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.44.57.png" alt="">
+    </div>
+    <p>Ввод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.48.33.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.48.32.png" alt="">
+    </div>
+   
+   <p class="name">3. Наименьший делитель</p>
+   <p><b># Пользователь вводит число N (N > 1). Выведите его наименьший делитель.</b></p>
+   <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.52.48.png" alt="">
+   </div>
+   <p>Ввод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.54.23.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/while/Снимок экрана 2025-04-19 в 12.54.22.png" alt="">
+    </div>
+
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1: Сумма чисел</b></p>                  <!-- 6.1 первая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая будет запрашивать у пользователя целые числа,</p>
+    <p class="ex_text">пока он не введет 0. Программа должна выводить сумму всех введенных чисел (кроме 0).</p>
+    <a class="button" href="#" id="toggleText6.1">Показать ответ</a>
+    <div id="hiddenText6.1" class="hidden">
+        <p class="answer">total = 0</p>
+        <p class="answer">number = int(input("Введите целое число (0 для выхода): "))</p>
+        <p class="answer">while number != 0:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;total += number</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;number = int(input("Введите целое число (0 для выхода): "))</p>
+        <p class="answer">print("Сумма введенных чисел:", total)</p>                 
+    </div>
+
+    <p class="exercise"><b>Задача 2: Подсчет четных и нечетных чисел</b></p>                  <!-- 6.2 вторая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая запрашивает у пользователя целые числа до тех пор,</p>
+    <p class="ex_text">пока он не введет 0. Программа должна подсчитать и</p>
+    <p class="ex_text">вывести количество четных и нечетных чисел.</p>
+    <a class="button" href="#" id="toggleText6.2">Показать ответ</a>
+    <div id="hiddenText6.2" class="hidden">
+        <p class="answer">even_count = 0</p>
+        <p class="answer">odd_count = 0</p>
+        <p class="answer">number = int(input("Введите целое число (0 для выхода): "))</p>
+        <p class="answer">while number != 0:</p>  
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;if number % 2 == 0:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;even_count += 1</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;odd_count += 1</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;number = int(input("Введите целое число (0 для выхода): "))</p>
+        <p class="answer">print("Количество четных чисел:", even_count)</p>
+        <p class="answer">print("Количество нечетных чисел:", odd_count)</p>
+    </div>
+
+    <p class="exercise"><b>Задача 3: Обратный отсчет</b></p>                  <!-- 6.3 третья задача -->
+    <p class="ex_text">Условие: Напишите программу, которая делает обратный отсчет</p>
+    <p class="ex_text">от заданного пользователем числа до 0.</p>
+    <a class="button" href="#" id="toggleText6.3">Показать ответ</a>
+    <div id="hiddenText6.3" class="hidden">
+        <p class="answer">n = int(input("Введите число для обратного отсчета: "))</p>
+        <p class="answer">while n >= 0:</p>      
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print(n)</p>   
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;n -= 1</p> 
+    </div>
+
+    <p class="exercise"><b>Задача 4: Проверка на простое число</b></p>                  <!-- 6.4 четвертая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая проверяет, является ли введенное пользователем</p>
+    <p class="ex_text">число простым. Используйте цикл <b>while</b>.</p>
+    <a class="button" href="#" id="toggleText6.4">Показать ответ</a>
+    <div id="hiddenText6.4" class="hidden">
+        <p class="answer">n = int(input("Введите целое число для проверки на простое: "))</p>
+        <p class="answer">if n &lt; 2:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;print(n, "не является простым числом.")</p>
+        <p class="answer">else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;is_prime = True</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;i = 2</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;while i * i &lt;= n:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if n % i == 0:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;is_prime = False</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i += 1</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;if is_prime:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(n, "является простым числом.")</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;print(n, "не является простым числом.")</p>
+    </div>
+
+    <p class="exercise"><b>Задача 5: Факториал</b></p>                  <!-- 6.5 пятая задача -->
+    <p class="ex_text">Условие: Напишите программу, которая вычисляет факториал числа,</p>
+    <p class="ex_text">введенного пользователем. Используйте цикл <b>while</b>.</p>
+    <a class="button" href="#" id="toggleText6.5">Показать ответ</a>
+    <div id="hiddenText6.5" class="hidden">
+        <p class="answer">n = int(input("Введите целое число для вычисления факториала: "))</p>
+        <p class="answer">factorial = 1</p>
+        <p class="answer">i = 1</p>
+        <p class="answer">while i &lt;= n:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;factorial *= i</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;i += 1</p>
+        <p class="answer">print("Факториал", n, "равен", factorial)</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/a5_9_VoCWsE?si=JZpirWzy0d0KU4yo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Ll3AN1FXXfE?si=0wPC4JcPsYe3M9Nt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/vMD6-jzgDvI?si=gMD8Y5_p99k1ALDj" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <script src="scripts/script6.js"></script>
+</body>
+</html>

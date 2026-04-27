@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lists</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+            text-align: left;
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .fg {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .name {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .bigtext {
+            padding: 20px 300px 20px 300px;
+            text-align: center;
+        }
+
+        .nn {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+</style>
+
+<body>
+    <h1>8. Списки</h1>
+    <div class="bigtext">
+        <p>Список - это непрерывная динамическая коллекция элементов. Каждому элементу списка присваивается порядковый номер - его индекс. Первый индекс равен нулю, второй - единице и так далее. Основные операции для работы со списками - это индексирование, срезы, добавление и удаление элементов, а также проверка на наличие элемента в последовательности.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.55.06.png" alt="">
+    </div>
+    <p>Создание пустого списка выглядит так:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.28.38.png" alt="">
+    </div>
+    <p>Создадим список, состоящий из нескольких чисел:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.56.25.png" alt="">
+    </div>
+    <p>Настало время строковых переменных:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.56.22 1.png" alt="">
+    </div>
+    <p>Не будем забывать и о дробях:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.56.23.png" alt="">
+    </div>
+    <p>Мы можем создать список, состоящий из различных типов данных:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.56.22.png" alt="">
+    </div>
+    <p>И такое возможно (⊙_⊙)</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 20.56.21.png" alt="">
+    </div>
+
+    <h2>Индексирование</h2>
+    <div class="bigtext">
+        <p>Что же такое индексирование? Это загадочное слово обозначает операцию обращения к элементу по его порядковому номеру ( ( ･ω･)ア напоминаю, что нумерация начинается с нуля). Проиллюстрируем это на примере:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.01.53.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.02.54.png" alt="">
+    </div>
+    <p>Списки в Python являются изме­няемым типом данных. Мы можем изменять содер­жимое каждой из ячеек:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.04.18.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.05.24.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Индексирование работает и в обратную сторону. Как такое возможно? Всё просто, мы обра­щаемся к элементу списка по отрица­тельному индексу. Индекс с номе­ром -1 дает нам доступ к после­днему элементу, -2 к предпоследнему и так далее.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.06.33.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.06.40.png" alt="">
+    </div>
+
+    <h2>Создание списка с помощью list()</h2>
+    <p>Создать список можно несколькими способами. Например, можно обработать любой итерируемый объект (например, строку) встроенной функцией <b>list()</b>:</p>
+    <p>Рассмотрим несколько примеров:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.08.46.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.08.54.png" alt="">
+    </div>
+
+    <h2>Длина списка</h2>
+    <div class="bigtext">
+        <p>С созданием списка вроде ра­зобрались. Следующий вопрос: как узнать длину списка? Можно, конечно, просто посчитать количество элементов... Но есть способ получше! Функция len() возвращает длину любой итерируемой переменной, переменной, по которой можно запустить цикл. Рассмотрим пример:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.15.11 2.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.15.35.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.18.40.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.15.51.png" alt="">
+    </div>
+
+    <h2>Срезы</h2>
+    <div class="bigtext">
+        <p>В начале статьи что-то гово­рилось о "срезах". Давайте разберем подробнее, что это такое. Срезом называется неко­торая подпос­ледователь­ность. Принцип действия срезов очень прост: мы "отре­заем" кусок от исходной последова­тель­ности элемента, не меняя её при этом. Я сказал "последо­вательность", а не "спи­сок", потому что срезы работают и с другими итерируемыми типами данных, например, со строками.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.21.48.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.21.55.png" alt="">
+    </div>
+    <p>Детально рассмотрим синтаксис срезов:</p>
+    <p><b>итерируемая_переменная[начальный_индекс:конечный_индекс - 1:длина_шага]</b></p>
+    <p>Обращаю ваше внимание, что мы делаем срез от начального индекса до конечного индекса - 1. То есть i = начальный_индекс и i < конечный индекс</p>
+    <p>Больше примеров!</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.25.39.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.26.05.png" alt="">
+    </div>
+    <p>Самое время понять, что делает третий параметр среза - длина шага!</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.28.55.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.29.06.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>А теперь вспоминаем всё, что мы знаем о циклах. В Python их целых два! Цикл for и цикл <b>while</b> Нас интересует цикл <b>for</b>, с его помощью мы можем перебирать зна­чения и индексы наших последовательностей. Начнем с перебора значений:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.30.51.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.31.09.png" alt="">
+    </div>
+    <p>Выглядит несложно, правда? В переменную fruit объявлен­ную в цикле по очереди записываются значения всех элементов списка fruits</p>
+    <p>А что там с перебором индексов?</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.32.42.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Этот пример гораздо интереснее предыдущего! Что же здесь происходит? Для начала разбе­ремся, что делает функция range(len(fruits))</p>
+    </div>
+    <div class="bigtext">
+        <p>Мы с вами знаем, что функция len() возвращает длину списка, а range() генерирует диапазон целых чисел от 0 до len()-1.</p>
+    </div>
+    <div class="bigtext">
+        <p>Сложив 2+2, мы получим, что переменная index принимает значения в диапазоне от 0 до len()-1. Идем дальше, fruits[index] - это обращение по индексу к элементу с индексом index списка fruits. А так как переменная index принимает значения всех индексов списка fruits, то в цикле мы переберем значения всех элементов нашего списка!</p>
+    </div>
+
+    <h2>Операция in</h2>
+    <p>С помощью in мы можем проверить наличие элемента в списке, строке и любой другой итерируемой переменной.</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.35.52.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.36.21.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.36.57.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.37.14.png" alt="">
+    </div>
+    <p>Приведу более сложный пример:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.39.20.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.40.10.png" alt="">
+    </div>
+
+    <h2>Методы для работы со списками</h2>
+    <p>Начнем с метода <b>append()</b>, который добавляет элемент в конец списка:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.43.36.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.44.15.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Метод <b>append()</b> отлично выпол­няет свою функцию. Но, что делать, если нам нужно добавить элемент в сере­дину списка? Это умеет метод <b>insert()</b>. Он добавляет элемент в список на произ­вольную позицию. <b>insert()</b> принимает в качестве первого аргу­мента позицию, на которую нужно вставить элемент, а вторым — сам элемент.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.46.16.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.47.01.png" alt="">
+    </div>
+    <p>Отлично! Добавлять элементы в список мы научи­лись, осталось понять, как их из него удалять.</p>
+    <p>Метод <b>pop()</b> удаляет эле­мент из списка по его индексу:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.49.00.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 21.49.47.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Теперь мы знаем, как удалять элемент из списка по его инде­ксу. Но что, если мы не знаем индекса элемента, но знаем его значение? Для такого случая у нас есть метод <b>remove()</b>, кото­рый удаляет пер­вый найденный по значению элемент в списке.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 22.08.06.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 22.08.49.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>А сейчас немного посчитаем, посчитаем эле­менты списка с помощью метода <b>count()</b></p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 22.12.04.png" alt="">
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 22.12.51.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>В программировании, как и в жизни, проще работать с упоря­доченными дан­ными, в них легче ори­енти­ро­ваться и что-либо искать. Метод <b>sort()</b> сорти­рует список по воз­раста­нию значений его элементов.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 22.14.44.png" alt="">
+    </div>
+    <p>Вывод:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.00.35.png" alt="">
+    </div>
+    <p>Мы можем изменять порядок сортировки с помощью пара­метра <b>reverse</b>. По умол­чанию этот параметр равен <b>False</b></p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.03.44.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.05.47.png" alt="">
+    </div>
+    <p>Иногда нам нужно перевернуть список, не спраши­вайте меня зачем... Для этого метод <b>reverse()</b>:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.08.11.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.08.53.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Допустим, у нас есть два списка и нам нужно их объединить. В python у спис­ков есть полез­ный метод <b>extend()</b>. Этот метод вызы­вается для одного списка, а в качестве аргу­мента ему пере­дается другой список, <b>extend()</b> запи­сывает в конец первого из них начало вто­рого:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.46.02.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.46.48.png" alt="">
+    </div>
+    <p>В природе существует специ­аль­ный метод для очистки списка — <b>clear()</b></p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.48.16.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.49.09.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Метод <b>index()</b> возв­ращает индекс эле­мента. Рабо­тает это так: вы пере­даете в качестве аргу­мента в <b>index()</b> значение элемента, а метод возв­ращает его индекс:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.51.13.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.51.34.png" alt="">
+    </div>
+    <p>Метод <b>copy()</b>, только не падайте, копирует список и возвра­щает его брата-близнеца.</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.56.39.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/lists/Снимок экрана 2025-04-19 в 23.56.57.png" alt="">
+    </div>
+
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1: Среднее значение списка</b></p>                  <!-- 8.1 первая задача -->
+    <p class="ex_text">Условие: Найдите среднее значение элементов списка.</p>
+    <a class="button" href="#" id="toggleText8.1">Показать ответ</a>
+    <div id="hiddenText8.1" class="hidden">
+        <p class="answer">numbers = [1, 2, 3, 4, 5]</p>
+        <p class="answer">average = sum(numbers) / len(numbers)</p>
+        <p class="answer">print("Среднее значение:", average)</p>                 
+    </div>
+
+    <p class="exercise"><b>Задача 2: Повторки</b></p>                  <!-- 8.2 вторая задача -->
+    <p class="ex_text">Условие: Даны два списка, удалите все элементы первого списка из второго</p>
+    <p class="ex_text">a = [1, 3, 4, 5]</p>
+    <p class="ex_text">b = [4, 5, 6, 7]</p>
+    <p class="ex_text"># Вывод</p>
+    <p class="ex_text">>>> [6, 7]</p>
+    <a class="button" href="#" id="toggleText8.2">Показать ответ</a>
+    <div id="hiddenText8.2" class="hidden">
+        <p class="answer">a = [1, 3, 4, 5]</p>
+        <p class="answer">b = [4, 5, 6, 7]</p>
+        <p class="answer">for el in a:</p> 
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;if el in b:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;b.remove(el)</p>
+        <p class="answer">print(b)</p>
+    </div>
+
+    <p class="exercise"><b>Задача 3: Максимум</b></p>                  <!-- 8.3 третья задача -->
+    <p class="ex_text">Условие: Найдите второй максимум из списка ниже.</p>
+    <p class="ex_text">l = [1, 324, 22, 0, 3728, 99, 149, 3, 7, 80]</p>
+    <a class="button" href="#" id="toggleText8.3">Показать ответ</a>
+    <div id="hiddenText8.3" class="hidden">
+        <p class="answer">l = [1, 324, 22, 0, 3728, 99, 149, 3, 7, 80]</p>
+        <p class="answer">l.remove(max(l))</p>   
+        <p class="answer">print(max(l))</p>   
+    </div>
+
+    <p class="exercise"><b>Задача 4: Рандом</b></p>                  <!-- 8.4 четвертая задача -->
+    <p class="ex_text">Создайте пустой список и добавьте в него 10 случайных чисел (от 1 до 100) и выведите их.</p>
+    <p class="ex_text">В данной задаче нужно использовать функцию <b>randint</b>.</p>
+    <p class="ex_text">Также выведите сумму, произведение, среднее арифметическое и наименьший элемент в списке</p>
+    <div class="nn">
+        <img src="pictures/lists/Снимок экрана 2025-04-20 в 00.24.27.png" alt="">
+    </div>
+    <a class="button" href="#" id="toggleText8.4">Показать ответ</a>
+    <div id="hiddenText8.4" class="hidden">
+        <p class="answer">from random import randint</p>
+        <p class="answer">l = []</p>
+        <p class="answer">for el in range(10):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;n = randint(1, 100) # Случайное число от 1 до 100</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;l.append(n)</p>
+        <p class="answer">print(l)</p>
+        <p class="answer">print(sum(l))</p>
+        <p class="answer">total = 1 #начальное значение произведения</p>
+        <p class="answer">for k in l:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;total = total * k</p>
+        <p class="answer">print(total)</p>
+        <p class="answer">print(sum(l) / len(l))</p>
+        <p class="answer">print(min(l))</p>
+    </div>
+
+    <p class="exercise"><b>Задача 5: Информатика!</b></p>                  <!-- 8.5 пятая задача -->
+    <p class="ex_text">Саша рисовала в тетради разные символы, а в центре написала красивым почерком: «Информатика».</p>
+    <p class="ex_text">Известно количество символов N (это чётное целое число) и сами символы.</p>
+    <p class="ex_text">Надо вывести массив с этими символами и со строкой "Информатика" посередине (см. пример).</p>
+    <p class="ex_text"><b>Ввод:</b></p>
+    <p class="ex_text">4</p>
+    <p class="ex_text">!</p>
+    <p class="ex_text">=</p>
+    <p class="ex_text">=</p>
+    <p class="ex_text">i</p>
+    <p class="ex_text"><b>Вывод</b>:</p>
+    <p class="ex_text">['!', '=', 'Информатика', '=', '¡']</p>
+    <a class="button" href="#" id="toggleText8.5">Показать ответ</a>
+    <div id="hiddenText8.5" class="hidden">
+        <p class="answer">a = int(input())</p>
+        <p class="answer">n = []</p>
+        <p class="answer">for k in range(a//2):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;r = input()</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;n.append(r)</p>
+        <p class="answer">n.append('Информатика')</p>
+        <p class="answer">for k in range(a//2):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;r = input()</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;n.append(r)</p>
+        <p class="answer">print(n)</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/AKbaDfbVhTI?si=asA-7hPzdnQrA5Ya" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/JZd9Ko3QDn8?si=MGRncDnwKGMDrXNP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/-X2ubBdP2Ak?si=aDeRe1wojqafjSGm" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <script src="scripts/script8.js"></script>
+</body>
+</html>

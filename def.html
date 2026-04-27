@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>def</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Seymour+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <style>
+
+        h1 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 60px;
+            padding-top: 20px;
+        }
+
+        body {
+            background-color: rgb(255, 255, 255);
+        }
+
+        h2 {
+            text-align: center;
+            font-family: "Press Start 2P", system-ui;
+            position: relative;
+            color: rgb(0, 0, 0);
+            font-size: 35px;
+            margin-top: 80px;
+        }
+
+        .topics {
+            position: relative;
+            margin-left: 20%;
+        }
+
+        .link {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .picture {
+            text-align: center;
+        }
+
+        dd {
+            margin-top: 15px;
+            padding-left: 15px;
+            text-align: left;
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        p {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+        
+        .text {
+            width: 75%;
+
+            text-align: center;
+            margin-left: 10%;
+        }
+
+        .examples {
+            text-align: center;
+        }
+
+        li {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+        }
+
+        .numbers {
+            text-align: center;
+        }
+
+        .hidden {
+            display: none;
+            
+        }
+
+        .visible {
+            display: block;
+        }
+
+        .answer {
+            margin-left: 800px;
+            text-align: left;
+        }
+
+        .exercise {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .ex_text {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .button {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: left;
+        }
+
+        .list {
+            text-align: left;
+            margin-left: 500px;
+        }
+
+        .fg {
+            font-family: "Anonymous Pro", serif;
+            font-size: 20px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+
+        .name {
+            font-family: "Anonymous Pro", serif;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(0, 0, 0);
+        }
+
+        .bigtext {
+            padding: 20px 300px 20px 300px;
+            text-align: center;
+        }
+
+        .nn {
+            text-align: left;
+            margin-left: 20px;
+        }
+
+        .list {
+            width: 60%;
+            
+            margin-top: 30px;
+        }
+        li {
+            padding: 20px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .videos {
+            text-align: center;
+            margin-top: 20px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <h1>11. Функции и рекурсия</h1>
+    <div class="bigtext">
+        <p>Функции представляют блок кода, который выполняет определенную задачу и который можно повторно использовать в других частях программы. В предыдущих статьях уже использовались функции. В частности, функция <b>print()</b>, которая выводит некоторое значение на консоль. Python имеет множество встроенных функций и позволяет определять свои функции. Формальное определение функции:</p>
+    </div>
+    <p class="name"><b>def имя_функции ([параметры]):</b></p>
+    <p class="name"><b>&nbsp;&nbsp;&nbsp;&nbsp;инструкции</b></p>
+    <div class="bigtext">
+        <p>Определение функции начинается с выражения <b>def</b>, которое состоит из имени функции, набора скобок с параметрами и двоеточия. Параметры в скобках необязательны. А со следующей строки идет блок инструкций, которые выполняет функция. Все инструкции функции имеют отступы от начала строки.</p>
+    </div>
+    <p>Например, определение простейшей функции:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.42.03.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Функция называется say_hello. Она не имеет параметров и содержит одну единственную инструкцию, которая выводит на консоль строку "Hello"</p>
+    </div>
+    <p>Обратите внимание, что инструкции функции должны иметь отступы от начала функции. Например:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.45.19.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Здесь инструкция print("Bye") не имеет отступов от начала функции say_hello и поэтому в эту функцию не входит. Обычно между определением функции и остальными инструкциями, которые не входят в функцию, располагаются две пустых строки.</p>
+    </div>
+    <p>Для вызова функции указывается имя функции, после которого в скобках идет передача значений для всех ее параметров:</p>
+    <p class="name"><b>имя_функции ([параметры])</b></p>
+    <p>Например, определим и вызовем функцию:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.48.04.png" alt="">
+    </div>
+    <p>Здесь три раза подряд вызывается функция say_hello. В итоге мы получим следующий консольный вывод:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.49.04.png" alt="">
+    </div>
+    <p>Обратите внимание, что функция сначала определяется, а потом вызывается.</p>
+    <p>Если функция имеет одну инструкцию, то ее можно разместить на одной строке с остальным определением функции:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.50.36.png" alt="">
+    </div>
+    <p>Подобным образом можно определять и вызывать и другие функции. Например, определим и выполним несколько функций:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.51.45.png" alt="">
+    </div>
+    <p>Консольный вывод:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.52.35.png" alt="">
+    </div>
+    <p>Оператор <b>return</b> возвращает значение из функции.</p>
+    <div class="bigtext">
+        <p>Представьте себе обычный калькулятор. Вы вводите первое число, операцию и второе число. Калькулятор возвращает нам результат операции над этими числами. Всё просто, не так ли? Функции точно так же умеют возвращать значение с помощью специального оператора <b>return</b>.</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 22.00.45.png" alt="">
+    </div>
+    <p>Результат:</p>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 22.01.28.png" alt="">
+    </div>
+
+    <h2>Локальные функции</h2>
+    <div class="bigtext">
+        <p>Одни функции могут определяться внутри других функций - внутренние функции еще называют <b>локальными</b>. Локальные функции можно использовать только внутри той функции, в которой они определены. Например:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 21.55.51.png" alt="">
+    </div>
+    <div class="bigtext">
+        <p>Здесь функции <b>say_hello()</b> и <b>say_goodbye()</b> определены внутри функции <b>print_messages()</b> и поэтому по отношению к ней являются локальными. Соответственно они могут использоваться только внутри функции <b>print_messages()</b></p>
+    </div>
+
+    <h2>Организация программы и функция main</h2>
+    <div class="bigtext">
+        <p>В программе может быть определено множество функций. И чтобы всех их упорядочить, одним из способов их организации является добавление специальной функции (обычно называется main), в которой потом уже вызываются другие функции:</p>
+    </div>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 22.03.32.png" alt="">
+    </div>
+
+    <h2>Рекурсия</h2>
+    <div class="bigtext">
+        <p>Рекурсия — это техника в программировании, при которой функция вызывает сама себя для решения подзадачи, которая является частью исходной задачи. Рекурсия делает код более кратким и понятным, но может привести к проблемам с памятью и производительностью, если не используется правильно.</p>
+    </div>
+    <h2>Принцип работы рекурсии</h2>
+    <div class="bigtext">
+        <p>Рекурсивные функции состоят из двух частей: базового случая и рекурсивного случая. Базовый случай — это условие, при котором функция прекращает вызывать саму себя и возвращает результат. Рекурсивный случай — это условие, при котором функция вызывает саму себя для решения меньшей подзадачи.</p>
+    </div>
+    <p class="name"><b>Пример рекурсии: вычисление факториала</b></p>
+    <div class="bigtext">
+        <p>Факториал числа n (n!) — это произведение всех натуральных чисел от 1 до n. Например, 5! = 5 * 4 * 3 * 2 * 1 = 120. Факториал можно выразить через рекурсию следующим образом:</p>
+    </div>
+    <dl class="topics">
+        <dd>1. Базовый случай: если n равно 1, то n! = 1</dd>
+        <dd>2. Рекурсивный случай: если n больше 1, то n! = n * (n-1)!</dd>
+    </dl>
+    <div class="examples">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 22.11.24.png" alt="">
+    </div>
+
+    <h2>Задачи</h2>
+    <p class="exercise"><b>Задача 1: Площадь круга</b></p>                  <!-- 12.1 первая задача -->
+    <p class="ex_text">Условие: Напишите функцию, которая получает в качестве аргумента радиус круга и находит его площадь.</p>
+    <a class="button" href="#" id="toggleText12.1">Показать ответ</a>
+    <div id="hiddenText12.1" class="hidden">
+        <p class="answer">def circle(r):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;s = 3.14 * (r ** 2)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;return s</p>
+        <p class="answer">print(circle(1)) #пример</p>
+    </div>
+    <p class="exercise"><b>Задача 2: На три</b></p>                 <!-- 12.2 вторая задача -->
+    <p class="ex_text">Напишите функцию, которая возвращает True, если число делится на 3,</p>
+    <p class="ex_text">и False, если - нет.</p>
+    <a class="button" href="#" id="toggleText12.2">Показать ответ</a>
+    <div id="hiddenText12.2" class="hidden">
+        <p class="answer">def delt(a):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;if a % 3 == 0:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return True</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;else:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return False</p>
+        <p class="answer">print(delt(9)) #пример <-- True</p>
+        <p class="answer">print(delt(14)) #пример <-- False</p>
+    </div>
+    <p class="exercise"><b>Задача 3: Сколько четных</b></p>                  <!-- 12.3 третья задача -->
+    <p class="ex_text">Условие: Напишите функцию, которая возвращает количество четных элементов в списке.</p>
+    <div class="nn">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 22.33.14.png" alt="">
+    </div>
+    <a class="button" href="#" id="toggleText12.3">Показать ответ</a>
+    <div id="hiddenText12.3" class="hidden">
+        <p class="answer">def evenCounter(a):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;total = 0</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;for j in a:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if j % 2 == 0:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total += 1</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;return total</p>
+        <p class="answer">even = evenCounter([1, 10, 2, 4, 6])</p>
+        <p class="answer">print(even) #4</p>        
+    </div>
+    <p class="exercise"><b>Задача 4: Уникальные</b></p>                  <!-- 12.4 третья задача -->
+    <p class="ex_text">Условие: Напишите функцию, которая возвращает список с уникальными (неповторяющихся) элементам.</p>
+    <p class="ex_text">Пример ввода: "Привет" (количество: 3)</p>
+    <p class="ex_text">Пример вывода: "ПриветПриветПривет"</p>
+    <div class="nn">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 22.47.11.png" alt="">
+    </div>
+    <a class="button" href="#" id="toggleText12.4">Показать ответ</a>
+    <div id="hiddenText12.4" class="hidden">
+        <p class="answer">def unique(spisok):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;total = []</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;for j in spisok:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;if spisok.count(j) == 1:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;total.append(j)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;return total</p>
+        <p class="answer">mylist = [1, 5, 1, 2, 1, 3, 2, 3, 4, 7, 8]</p>
+        <p class="answer">print(unique(mylist)) # >>> [5, 4, 7, 8]</p>
+    </div>
+    <p class="exercise"><b>Задача 5: Сумма списка</b></p>                  <!-- 12.5 пятая задача -->
+    <p class="ex_text">Условие: Напишите функцию amountList, которая возвращает сумму всех элементов списка.</p>
+    <div class="nn">
+        <img src="pictures/def/Снимок экрана 2025-04-22 в 23.00.38.png" alt="">
+    </div>
+    <a class="button" href="#" id="toggleText12.5">Показать ответ</a>
+    <div id="hiddenText12.5" class="hidden">
+        <p class="answer">def amountList(lst):</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;amount = 0</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;for x in lst:</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;amount += x</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;return amount</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">mylist = [1, 2, 4, 8, 16]</p>
+        <p class="answer">s = amountList(mylist)</p>
+        <p class="answer">&nbsp;&nbsp;&nbsp;&nbsp;</p>
+        <p class="answer">print(f'Сумма списка {mylist} равна {s}')</p>
+    </div>
+
+    <h2>Полезные видео</h2>
+    <div class="videos">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DJAlfolEv9A?si=SHgtBFbNE8dOOv9d" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/nEeQZulWZUQ?si=nsx-TYntXxws2f3k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6K5v4--G__U?si=3RTEYmsxnlLdsLCS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jvFULnNpNLg?si=CePSidsP9v69SmpJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    
+    <script src="scripts/script12.js"></script>
+</body>
+</html>
